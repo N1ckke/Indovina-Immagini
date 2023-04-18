@@ -13,7 +13,7 @@ public class Listener implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e){
         if(e.getActionCommand().equals(item.btnStart.getText())) {
-            switch (item.type.getName()) {
+            switch (item.type.getSelectedItem()) {
                 case "Overworld" -> {
                     r.setMin(0);
                     r.setMax(10);
